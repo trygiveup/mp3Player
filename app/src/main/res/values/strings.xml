@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">我的MP3</string>
+    <string name="music_list">音樂列表</string>
+    <string name="pause">暫停</string>
+    <string name="stop">停止</string>
+    <string name="resume">開始</string>
+    <string name="complete">播放完畢</string>
+    <string name="mp3_name">音樂名稱</string>
+    <string name="from_sd">讀取SD</string>
+    <string name="author_error">取得授權成功</string>
+    <string name="author_done">取得授權失敗</string>
+    <string name="from_app">來自:APP</string>
+    <string name="error">錯誤</string>
+    <string name="author_fail">授權失敗</string>
+</resources>
