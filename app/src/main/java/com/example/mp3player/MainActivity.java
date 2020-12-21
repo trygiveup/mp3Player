@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-
+    //手機內部歌曲陣列化
     public void readRawFile() {
         mp3Names.clear();
         resId.clear();
@@ -108,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
         readBtn.setText(R.string.from_sd);
     }
 
-    //保護協定的設置
+    //保護協定的設置,無此動作讀取不到手機內部資料
     private void getPermission() {
         int permission = ActivityCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE);
         if (permission != PackageManager.PERMISSION_GRANTED) {

@@ -133,6 +133,7 @@ public class PlayerActivity extends AppCompatActivity implements View.OnClickLis
     }
 
     public void startMusic() {
+        //擷取桌布,如果沒有則用原有的
         Bitmap image = getBitmapFromSDCard(mp3Names.get(position));
         if (image != null) {
             titleImg.setImageBitmap(image);
@@ -162,7 +163,7 @@ public class PlayerActivity extends AppCompatActivity implements View.OnClickLis
         }).start();
     }
 
-
+        //從手機內部MUSIC資料夾搜尋圖案
     private static Bitmap getBitmapFromSDCard(String file) {
         try {
             String sd = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_MUSIC).toString();
